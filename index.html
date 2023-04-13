@@ -9,25 +9,25 @@
 </head>
 <body>
     <div class="calculator">
-        <input class="calculator-screen" type="text" placeholder="">
+        <input id="screen" class="calculator-screen" type="text" placeholder="0">
         <div class="calculator-keys">
-            <button class="operador">+</button>
-            <button class="operador">-</button>
-            <button class="operador">*</button>
-            <button class="operador">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="ac">AC</button>
-            <button class="equal-sign">=</button>
+            <button id="+" onclick="getValue('+')">+</button>
+            <button id="-" onclick="getValue('-')">-</button>
+            <button id="*" onclick="getValue('*')">*</button>
+            <button id="/" onclick="getValue('/')">/</button>
+            <button id="7" onclick="getValue('7')">7</button>
+            <button id="8" onclick="getValue('8')">8</button>
+            <button id="9" onclick="getValue('9')">9</button>
+            <button id="4" onclick="getValue('4')">4</button>
+            <button id="5" onclick="getValue('5')">5</button>
+            <button id="6" onclick="getValue('6')">6</button>
+            <button id="1" onclick="getValue('1')">1</button>
+            <button id="2" onclick="getValue('2')">2</button>
+            <button id="3" onclick="getValue('3')">3</button>
+            <button onclick="getZero()">0</button>
+            <button onclick="addDecimal()">.</button>
+            <button class="ac" onclick="clearScreen()">AC</button>
+            <button class="equal-sign" onclick="solve()">=</button>
         </div>
     </div>
     <script src="./assets/js/main.js"></script>

@@ -1,4 +1,3 @@
-
 // Obtiene el valor de cualquier botón
 function getValue(buttonValue) {
     var key = document.getElementById(buttonValue).innerHTML;
